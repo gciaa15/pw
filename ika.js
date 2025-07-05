@@ -1,3 +1,5 @@
+alert("皆さん、ようこそ。OKを押して私のウェブページを開きましょう\n\n\"Minasan, yōkoso. OK o oshite watashi no u~ebupēji o hirakimashou\"\n\n(Selamat datang semuanya. Tekan OK untuk membuka halaman web saya)");
+
 // Carousel functionality
 const carouselSlide = document.querySelector('.carousel-slide');
 const images = document.querySelectorAll('.carousel-slide img');
