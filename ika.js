@@ -79,5 +79,11 @@ document.querySelectorAll('.fade-in-out').forEach(element => {
 
 const video = document.getElementById('backgroundVideo');
 video.volume = 0.5;  // Set volume 50%
-
+document.addEventListener('DOMContentLoaded', function() {
+    const video = document.getElementById('backgroundVideo');
+    document.body.addEventListener('click', () => {
+        video.muted = false;
+        video.play();
+    });
+});
 
