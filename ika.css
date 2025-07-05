@@ -1,0 +1,188 @@
+/* Fullscreen video background */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+}
+
+/* Reset & base style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* Container & Content */
+.container {
+    color:white;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.content-section {
+    color:white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+.content-section h2 {
+    color: white;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+.content-section img {
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* About Image */
+.about {
+    color: white;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Skills */
+.skill-bar {
+    color: white;
+    background-color: #c4dde3;
+    border-radius: 3px;
+    margin: 10px 0;
+    height: 20px;
+}
+
+.skill-level {
+    background-color: #70c5fd;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 12px;
+    height: 100%;
+}
+
+/* Carousel */
+.carousel-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Menambahkan transisi untuk efek lebih halus */
+    width: 600%; /* Menghitung lebar total gambar, sesuaikan dengan jumlah gambar */
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 400px;  /* Sesuaikan tinggi gambar sesuai dengan kebutuhan */
+    object-fit: cover;  /* Gambar akan mengisi area tanpa merubah proporsi */
+    border-radius: 8px;
+}
+
+/* Carousel Control Buttons */
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Footer */
+footer {
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+/* CSS untuk efek fade-in dan fade-out */
+.fade-in-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+}
+
